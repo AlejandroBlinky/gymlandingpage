@@ -67,7 +67,7 @@ export default function Home() {
             <div className='col'><img className='gymequipimg shadow m-4 ' src={equip1.src}></img> <img className='gymequipimg shadow m-1' src={equip2.src}></img></div>
             
           </div>
-          <div row>
+          <div className='row'>
             <div className='col'><img className='gymequipimg shadow m-4' src={equip3.src}></img> <img className='gymequipimg shadow m-1 ' src={equip4.src}></img></div>
            
           </div>
