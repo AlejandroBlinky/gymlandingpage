@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       <div className='row homepagecontainer align-items-center justify-content-center'>
-        <div className='col text-white homepagelistitem' style={{fontSize:'5em'}}><p>Conoce a nuestro equipo de profesionales.</p><div className='d-flex justify-content-evenly align-items-center'><a className='btn btn-outline-info p-5 fs-1'>About Us</a> <p className='text-center fs-3'>Mas informacion detallada.</p></div></div>
+        <div className='col text-white homepagelistitem' style={{fontSize:'5em'}}><p>Conoce a nuestro equipo de profesionales.</p><div className='d-flex justify-content-evenly align-items-center'><a href='/info' className='btn btn-outline-info p-5 fs-1'>About Us</a> <p className='text-center fs-3'>Mas informacion detallada.</p></div></div>
         <div className='col '>
           <div className='row'>
             <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
