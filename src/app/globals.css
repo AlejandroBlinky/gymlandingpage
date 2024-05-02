@@ -28,11 +28,12 @@
 
 
 .homepagecontainer{
-  display: flex;
-  justify-content: left;
-  min-height: 100vh;
+ 
+  max-width: 100%;
+  min-height: 80vh;
+  max-height: 80vh;
   position: relative;
-  left: 0px;
+ 
  
 }
 
@@ -86,13 +87,15 @@ align-items: left;
 }
 
 .homepagelistitem{
-max-width: 40%;
+max-width: 100%;
 color: white;
-font-size: 1.5em;
+text-align: center;
+font-size: 8em;
 font-weight: 200;
 text-decoration: none;
-list-style-type:disc;
-font-family:Verdana, Geneva, Tahoma, sans-serif
+list-style-type:none;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+text-shadow: 1px 1px 1px black;
 }
 
 .SocialMediaContainer{
@@ -155,4 +158,47 @@ margin-top:10px !important;
   font-weight: 200;
   text-shadow: 1px 1px 1px black;
   
+}
+
+.homepageimg{
+  max-width: 90%;
+  min-width: 90%;
+  border-radius: 10%;
+  margin: 5%;
+ 
+}
+
+.homeimgdiv{
+  min-width: 100%;
+ 
+ 
+}
+
+.homepagecol{
+  max-height: 30vh;
+}
+
+.teampersonimg{
+  max-width: 15vh;
+  min-height: 15vh;
+ 
+  border-radius: 50%;
+}
+
+.teampersonname{
+  font-size: 2em;
+  text-shadow: 1px 1px 1px black;
+}
+
+.gymequipimg{
+  max-width: 45%;
+  min-height: auto;
+  border-radius: 2%;
+ 
+}
+
+
+.gymequipimg:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
 }
