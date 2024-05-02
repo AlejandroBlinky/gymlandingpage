@@ -6,8 +6,20 @@
   box-sizing: border-box;
   margin: 0;
   font-family:'Bebas Neue', sans-serif;
+  line-height: 1.2em;
 }
 
+
+@media screen and (min-width: 769px){
+.mainstyle{
+  
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  position:absolute;
+  min-width: 100%;
+  
+}
 .navbar{
  border-radius: 10vh;
  min-width: 100%;
@@ -16,7 +28,9 @@
  background-color:rgba(0,0,0,0.6);
 
 }
-
+.homepagestylebackground{
+  min-height: 200vh;
+}
 .homebackgroundoverlay{
   position: absolute;
   bottom: 0;
@@ -31,9 +45,9 @@
  
   max-width: 100%;
   min-height: 80vh;
-  max-height: 80vh;
+  max-height: 100%;
   position: relative;
- 
+  
  
 }
 
@@ -75,7 +89,7 @@ list-style: none;
 .homepagelistcontainer{
 display: flex;
 margin-top: 8%;
-min-width: 50vh;
+min-width: 50%;
 
 flex-direction: column;
 
@@ -90,12 +104,14 @@ align-items: left;
 max-width: 100%;
 color: white;
 text-align: center;
-font-size: 8em;
+
+font-size: 5em;
 font-weight: 200;
 text-decoration: none;
 list-style-type:none;
 font-family:Verdana, Geneva, Tahoma, sans-serif;
 text-shadow: 1px 1px 1px black;
+position: relative;
 }
 
 .SocialMediaContainer{
@@ -115,7 +131,7 @@ padding-bottom: 2%;
   transform: translateY(-50%); /* Centra verticalmente el contenedor */
   right: 2%; /* Ajusta la posición horizontal desde el borde derecho */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .socialMediaDiv {
@@ -175,7 +191,10 @@ margin-top:10px !important;
 }
 
 .homepagecol{
-  max-height: 30vh;
+  max-height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .teampersonimg{
@@ -185,13 +204,19 @@ margin-top:10px !important;
   border-radius: 50%;
 }
 
+.teampersonimg:hover{
+  transform: rotate(3600deg) scale(2);
+  transition: 4s;
+}
+
 .teampersonname{
   font-size: 2em;
   text-shadow: 1px 1px 1px black;
 }
 
 .gymequipimg{
-  max-width: 45%;
+ 
+  max-width: 40%;
   min-height: auto;
   border-radius: 2%;
  
@@ -201,4 +226,294 @@ margin-top:10px !important;
 .gymequipimg:hover{
   transform: scale(1.05);
   transition: transform 0.3s;
+}
+
+.footerstyle{
+  position: relative;
+  bottom: 0px;
+  margin-top: 100px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.aboutusbuttondiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+  *{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'Bebas Neue', sans-serif;
+    line-height: 1.1em;
+  }
+ 
+.mainstyle{
+  max-width: 768px !important;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  position:absolute;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+} 
+  
+
+  .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 80% !important;
+  }
+  .col {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+  .aboutusbuttondiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+ 
+  .navbar{
+    border-radius: 10vh;
+    min-width: 100%;
+    background-color:rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+   }
+   .homepagestylebackground{
+     min-height: 100%;
+   }
+
+   .homebackgroundoverlay{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     background: linear-gradient(90deg, rgba(0, 0, 0,0.8) 10%, rgb(0, 0, 0,0.5) 75%, rgb(0, 0, 0,0) 100%);
+   }
+   
+   
+   .homepagecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 80% !important;
+    margin: 0 auto; /* Esto centrará horizontalmente el contenido */
+  }
+   
+   .navbartitle{
+     text-decoration: none;
+     
+     list-style: none;
+     padding: 0;
+     font-size: 4em;
+     color: white;
+     font-weight: 600;
+     
+    
+   
+   }
+   
+   .navbarlistcontainer{
+   display: block;
+   min-width: 30%;
+   justify-content: center;
+   align-items: center;
+   gap: 20%;
+   margin-top: 1%;
+   margin-right: 5%;
+   }
+   
+   .navbarlistitem{
+   color: white;
+   font-size: 2.5em;
+   font-weight: 400;
+   text-decoration: none;
+   list-style: none;
+   }
+   
+   .navbarlistitem:hover{
+     transform: scale(1.2);
+     transition: transform 0.2s;
+   }
+   
+   .homepagelistcontainer{
+   display: flex;
+   margin-top: 8%;
+   min-width: 50%;
+   
+   flex-direction: column;
+   
+   
+  
+   
+   align-items: center;
+   justify-content: center;
+   
+   }
+   
+   .homepagelistitem{
+   max-width: 100%;
+   color: white;
+   text-align: center;
+   justify-content: center;
+   font-size: 4em;
+   font-weight: 200;
+   text-decoration: none;
+   list-style-type:none;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   text-shadow: 1px 1px 1px black;
+   position: relative;
+   }
+   
+  
+   .SocialMediaContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 768px;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20%;
+    padding:10%;
+  }
+  
+ 
+   
+   .socialmedialogos:hover{
+     transform: scale(1.1);
+     transition: transform 0.2s;
+   
+   }
+   
+   
+   
+ 
+   .socialmedialogos {
+     width: 80%; /* Ajusta el ancho de los íconos según tus necesidades */
+    
+     height: auto; 
+     
+     
+   }
+   
+   .infopagestylebackgroundoverlay{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, rgba(0, 0, 0,0.8), rgb(0, 0, 0,0.6),rgb(0, 0, 0,0.4),rgb(0, 0, 0,0.6), rgb(0, 0, 0,0.8));
+   }
+   
+   .infocontainer{
+     display: flex;
+     max-width: 50%;
+     justify-content: center;
+     align-items: center;
+     margin-left: 25%;
+     margin-right: 25%;
+     margin-top: 10%;
+     text-align: center;
+     
+   }
+   
+   
+   .infop{
+     font-family:'Montserrat',sans-serif;
+     font-size: 2.2em;
+     font-weight: 200;
+     text-shadow: 1px 1px 1px black;
+     
+   }
+   
+   .homepageimg{
+     max-width: 90%;
+     min-width: 90%;
+     border-radius: 10%;
+     margin: 5%;
+    
+   }
+   
+   .homeimgdiv{
+     min-width: 100%;
+    
+    
+   }
+   
+   .homepagecol{
+     max-height: 30%;
+   }
+   
+   .teampersonimg{
+     max-width: 30vh;
+     min-height: 30vh;
+    
+     border-radius: 50%;
+   }
+   
+   .teampersonname{
+     font-size: 2em;
+     text-shadow: 1px 1px 1px black;
+   }
+   
+   .gymequipimg{
+    
+     max-width: 120%;
+     min-height: auto;
+     border-radius: 2%;
+    
+   }
+   
+   
+   .gymequipimg:hover{
+     transform: scale(1.05);
+     transition: transform 0.3s;
+   }
+   
+   .footerstyle{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+   
+   }
+   
 }

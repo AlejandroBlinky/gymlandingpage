@@ -15,7 +15,7 @@ export default function Home() {
 
      
   return (
-    <main style={{backgroundImage: `url(${backgroundImage.src})`,backgroundSize:'cover',backgroundPosition: 'center',minHeight: '100vh',position: 'absolute', minWidth:'100%'}}className="homepagestylebackground p-0">
+    <main className='mainstyle' style={{backgroundImage: `url(${backgroundImage.src})`}}>
       <div className='homebackgroundoverlay p-0'></div>
       <Navbar></Navbar>
      <div className='row homepagecontainer '>
@@ -45,17 +45,17 @@ export default function Home() {
       </div>
 
       <div className='row homepagecontainer align-items-center justify-content-center'>
-        <div className='col text-white homepagelistitem' style={{fontSize:'5em'}}><p>Conoce a nuestro equipo de profesionales.</p><div className='d-flex justify-content-evenly align-items-center'><a href='/info' className='btn btn-outline-info p-5 fs-1'>About Us</a> <p className='text-center fs-3'>Mas informacion detallada.</p></div></div>
-        <div className='col '>
+        <div className='col text-white homepagelistitem'><p>Conoce a nuestro equipo de profesionales.</p><div className='aboutusbuttondiv'><a href='/info' className='btn btn-outline-info p-4 fs-3'>About Us</a> <p className='text-center fs-3'>Mas informacion detallada.</p></div></div>
+        <div className='col bg-dark p-5 shadow' style={{borderRadius:'8%'}}>
           <div className='row'>
-            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
-            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
-            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
+            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-black' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
+            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-black' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
+            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-black' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
           </div>
           <div className='row mt-5'>
-          <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
-            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
-            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-dark' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
+          <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-black' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
+            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-black' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
+            <div className='col text-white d-flex flex-column justify-content-center align-items-center'><img className='teampersonimg shadow border border-4 border-black' src={person1.src}></img><p className='teampersonname'>Jorge Lopez</p></div>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function Home() {
            
           </div>
         </div>
-        <div className='col text-white homepagelistitem' style={{fontSize:'4em', textShadow:'1px 1px 1px black'}}><p>Con nuestro equipamiento de gimnasio, encontrarás todo lo necesario para potenciar tu entrenamiento: desde máquinas cardiovasculares hasta equipos de fuerza. ¡Alcanza tus metas de fitness con nosotros!</p></div>
+        <div className='col text-white homepagelistitem' style={{fontSize:'2.5em', textShadow:'1px 1px 1px black', justifyContent:'center', alignContent:'center'}}><p>Con nuestro equipamiento de gimnasio, encontrarás todo lo necesario para potenciar tu entrenamiento: desde máquinas cardiovasculares hasta equipos de fuerza. ¡Alcanza tus metas de fitness con nosotros!</p></div>
       </div>
       <SocialMedia></SocialMedia>
       <Footer></Footer>
