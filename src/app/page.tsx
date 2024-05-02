@@ -63,7 +63,7 @@ export default function Home() {
 
       <div className='row homepagecontainer '>
         <div className='col text-white homepagelistitem'>
-          <div row>
+          <div className='row'>
             <div className='col'><img className='gymequipimg shadow m-4 ' src={equip1.src}></img> <img className='gymequipimg shadow m-1' src={equip2.src}></img></div>
             
           </div>
